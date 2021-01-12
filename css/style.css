@@ -1,0 +1,8 @@
+.cyan-link{
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    text-decoration: none;
+}
+.cyan-link::after{
+    content: url('../images/icon-arrow.svg');
+}

@@ -1,3 +1,16 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+h1, h2, button, nav{
+    font-family: 'Raleway';
+}
+h1, h2{
+    margin: 0;
+    font-weight: 700;
+    /* padding: 0.83em 0; */
+}
 .cyan-link{
     color: hsl(170, 45%, 43%);
     border-bottom: 1px solid hsl(170, 45%, 43%);
@@ -5,4 +18,49 @@
 }
 .cyan-link::after{
     content: url('../images/icon-arrow.svg');
+}
+.content{
+    padding: 5em 4em;
+}
+
+.navbar{
+    padding: 4em;
+}
+.navbar .logo{
+    float: left;
+}
+.navbar nav ul{
+    list-style: none;
+    float: right;
+}
+.navbar nav ul li{
+    display: inline-block;
+    margin-right: 1.5em;
+}
+.navbar nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.curved .content{
+    background-color: hsl(240, 75%, 98%);
+}
+.curved::before{
+    content: url('../images/bg-curve-mobile.svg');
+}
+.early-access{
+    background-color: hsl(238, 22%, 44%);
+    color: #ffffff;
+}
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: #ffffff;
+}
+footer a{
+    color: inherit;
+    text-decoration: none;
+}
+footer img{
+    display: block;
+    filter: invert(100%) saturate(0%) brightness(500%);
 }

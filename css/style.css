@@ -29,21 +29,29 @@ button{
     color: #ffffff;
     font-weight: 700;
 }
-/*container*/
+/*containers*/
 .content{
     padding: 5em 3em;
+}
+.img-container{
+    max-width: 50%;
+    margin: auto;
+}
+.img-container img{
+    width: 100%;
 }
 /*navigation bar*/
 .navbar{
     padding-top: 2rem;
     padding-bottom: 6rem;
     padding: 2rem 2rem 6rem 2rem;
+    font-size: 13px;
 }
 .navbar .logo{
     float: left;
 }
 .navbar .logo img{
-    width: 2.85em;
+    width: 3.2em;
 }
 .navbar nav ul{
     list-style: none;
@@ -52,8 +60,7 @@ button{
 }
 .navbar nav ul li{
     display: inline-block;
-    margin-right: 1.5em;
-    font-size: 0.81rem;
+    margin-right: 1.2em;
 }
 .navbar nav ul li a{
     text-decoration: none;
@@ -62,13 +69,6 @@ button{
 /*content*/
 section{
     text-align: center;
-}
-.img-container{
-    max-width: 50%;
-    margin: auto;
-}
-.img-container img{
-    width: 100%;
 }
 .curved{
     background-color: hsl(240, 75%, 98%);

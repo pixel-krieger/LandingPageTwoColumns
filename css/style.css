@@ -1,6 +1,8 @@
+/*general*/
 body{
     margin: 0;
     font-family: 'Open Sans';
+    font-size: 14px;
     font-weight: 400;
 }
 h1, h2, button, nav{
@@ -11,38 +13,64 @@ h1, h2{
     font-weight: 700;
     /* padding: 0.83em 0; */
 }
-.cyan-link{
-    color: hsl(170, 45%, 43%);
-    border-bottom: 1px solid hsl(170, 45%, 43%);
-    text-decoration: none;
+input[type="email"], button{
+    box-sizing: border-box;
+    height: 2.5rem;
+    padding: 0 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
 }
-.cyan-link::after{
-    content: url('../images/icon-arrow.svg');
+input[type="email"]{
+    border: 1px solid hsl(0, 0%, 75%);
 }
+button{
+    background-color: hsl(224, 93%, 58%);
+    border-width: 0;
+    color: #ffffff;
+    font-weight: 700;
+}
+/*container*/
 .content{
-    padding: 5em 4em;
+    padding: 5em 3em;
 }
-
+/*navigation bar*/
 .navbar{
-    padding: 4em;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    padding: 2rem 2rem 6rem 2rem;
 }
 .navbar .logo{
     float: left;
 }
+.navbar .logo img{
+    width: 2.85em;
+}
 .navbar nav ul{
     list-style: none;
     float: right;
+    text-align: center;
 }
 .navbar nav ul li{
     display: inline-block;
     margin-right: 1.5em;
+    font-size: 0.81rem;
 }
 .navbar nav ul li a{
     text-decoration: none;
     color: inherit;
 }
-
-.curved .content{
+/*content*/
+section{
+    text-align: center;
+}
+.img-container{
+    max-width: 50%;
+    margin: auto;
+}
+.img-container img{
+    width: 100%;
+}
+.curved{
     background-color: hsl(240, 75%, 98%);
 }
 .curved::before{
@@ -52,6 +80,7 @@ h1, h2{
     background-color: hsl(238, 22%, 44%);
     color: #ffffff;
 }
+/*footer*/
 footer{
     background-color: hsl(243, 87%, 12%);
     color: #ffffff;
@@ -63,4 +92,16 @@ footer a{
 footer img{
     display: block;
     filter: invert(100%) saturate(0%) brightness(500%);
+}
+/*special items*/
+.special-h2{
+    font-size: 1.1rem;
+}
+.cyan-link{
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    text-decoration: none;
+}
+.cyan-link::after{
+    content: url('../images/icon-arrow.svg');
 }

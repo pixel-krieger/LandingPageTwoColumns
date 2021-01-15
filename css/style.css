@@ -4,6 +4,7 @@ body{
     font-family: 'Open Sans';
     font-size: 14px;
     font-weight: 400;
+    line-height: 1.8em;
 }
 h1, h2, button, nav{
     font-family: 'Raleway';
@@ -11,7 +12,11 @@ h1, h2, button, nav{
 h1, h2{
     margin: 0;
     font-weight: 700;
+    line-height: 1.2em;
     /* padding: 0.83em 0; */
+}
+h2{
+    font-size: 2.5em;
 }
 input[type="email"], button{
     box-sizing: border-box;
@@ -19,6 +24,7 @@ input[type="email"], button{
     padding: 0 1rem;
     width: 100%;
     margin-bottom: 1rem;
+    border-radius: 4px;
 }
 input[type="email"]{
     border: 1px solid hsl(0, 0%, 75%);
@@ -33,6 +39,7 @@ button{
 .content{
     padding: 5em 3em;
 }
+
 .img-container{
     max-width: 50%;
     margin: auto;
@@ -40,6 +47,7 @@ button{
 .img-container img{
     width: 100%;
 }
+
 .testimonial{
     border-radius: 4px;
     background-color: #ffffff;
@@ -47,11 +55,12 @@ button{
     padding: 1.5em;
     max-width: 315px;
     text-align: left;
-    margin: 2em 0;
+    margin: 4em auto;
+    box-shadow: 0 0 10px 1px hsl(0, 0%, 75%);
 }
 .testimonial .user img{
     float: left;
-    height: 2.7em;
+    height: 3.2em;
     margin-right: 15px;
     border-radius: 50%;
 }
@@ -72,7 +81,7 @@ button{
     float: left;
 }
 .navbar .logo img{
-    width: 3.2em;
+    width: 3.4em;
 }
 .navbar nav ul{
     list-style: none;
@@ -81,21 +90,18 @@ button{
 }
 .navbar nav ul li{
     display: inline-block;
-    margin-right: 1.2em;
+    margin-right: 1em;
 }
 .navbar nav ul li a{
     text-decoration: none;
     color: inherit;
 }
 /*content*/
-section{
-    text-align: center;
-}
 .curved{
     background-color: hsl(240, 75%, 98%);
-}
-.curved::before{
-    content: url('../images/bg-curve-mobile.svg');
+    border-top-left-radius: 50% 53px;
+    border-top-right-radius: 50% 53px;
+    padding-top: calc(53px + 3rem);
 }
 .early-access{
     background-color: hsl(238, 22%, 44%);
@@ -114,17 +120,25 @@ footer a{
     color: inherit;
     text-decoration: none;
 }
-footer img{
+footer #footer-logo{
     display: block;
     filter: invert(100%) saturate(0%) brightness(500%);
 }
 /*special items*/
+.mobile-center{
+    text-align: center;
+}
 .special-h2{
     font-size: 1.1rem;
 }
 .cyan-link{
-    color: hsl(170, 45%, 43%);
+    width: fit-content;
+    padding-bottom: 4px;
     border-bottom: 1px solid hsl(170, 45%, 43%);
+    margin: 0 auto;
+}
+.cyan-link a{
+    color: hsl(170, 45%, 43%);
     text-decoration: none;
 }
 .cyan-link::after{
@@ -143,4 +157,71 @@ footer img{
 }
 .i.email{
     content: url('../images/icon-email.svg');
+}
+
+
+@media (min-width: 1000px){
+    body{
+        font-size: 16px;
+    }
+    .navbar{
+        font-size: 16px;
+    }
+    .navbar .logo img{
+        width: 4em;
+    }
+    input[type="email"], button{
+        width: auto;
+    }
+    input[type="email"]{
+        min-width: 250px;
+    }
+    .testimonial{
+        margin: 4em 0;
+    }
+    
+    section .img-container{
+        width: 55%;
+    }
+    section{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .early-access{
+        display: block;
+    }
+    .early-access .content{
+        display: flex;
+        justify-content: space-between;
+    }
+    .early-access .ea-text{
+        max-width: 430px;
+    }
+    .early-access .ea-form{
+        width: 40%;
+    }
+    .early-access .ea-form input[type="email"]{
+        width: 100%;
+    }
+    footer .content{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .social{
+        min-width: calc(100% / 4);
+    }
+    footer .social img{
+        display: inline-block;
+        height: auto;
+        width: 30px;
+    }
+    .mobile-center{
+        text-align: left;
+    }
+    .cyan-link{
+        margin: 0;
+    }
+    .desktop-block{
+        display: block;
+    }
 }

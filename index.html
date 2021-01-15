@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
         .attribution {
             font-size: 11px;
@@ -21,6 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -48,7 +48,8 @@
                 family, and co-workers.
             </p>
             <input type="email" placeholder="Enter your email">
-            <button>Get Started</button>
+            <button onclick="checkEmail(this)">Get Started</button>
+            <span class="wrong-email red"></span>
         </div>
     </section>
     <!-- <img src="images/bg-curve-mobile.svg" alt="curves"> -->
@@ -95,7 +96,8 @@
             </div>
             <div class="column ea-form">
                 <input type="email" placeholder="email@example.com" class="desktop-block">
-                <button>Get Started For Free</button>
+                <button onclick="checkEmail(this)">Get Started For Free</button>
+                <span class="wrong-email"></span>
             </div>
         </div>
     </section>
